@@ -1,4 +1,4 @@
-[Cryptopals](https://cryptopals.com/) is a series of challenges covering common cryptographic const
+[Cryptopals](https://cryptopals.com/) is a series of challenges covering common cryptographic constructs.
 #
 To run solutions:
 

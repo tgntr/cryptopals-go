@@ -95,3 +95,23 @@ Here's how:
 
 8.For each block, the single-byte XOR key that produces the best looking histogram is the repeating-key XOR key byte for that block. Put them together and you have the key.
 #
+
+## [7. AES in ECB mode](https://cryptopals.com/sets/1/challenges/7) ##
+The Base64-encoded content [in this file](https://cryptopals.com/static/challenge-data/7.txt) has been encrypted via AES-128 in ECB mode under the key
+
+"YELLOW SUBMARINE".
+(case-sensitive, without the quotes; exactly 16 characters; I like "YELLOW SUBMARINE" because it's exactly 16 bytes long, and now you do too).
+
+Decrypt it. You know the key, after all.
+
+Easiest way: use OpenSSL::Cipher and give it AES-128-ECB as the cipher.
+#
+
+## [8. Detect AES in ECB mode](https://cryptopals.com/sets/1/challenges/8) ##
+[In this file](https://cryptopals.com/static/challenge-data/8.txt) are a bunch of hex-encoded ciphertexts.
+
+One of them has been encrypted with ECB.
+
+Detect it.
+
+Remember that the problem with ECB is that it is stateless and deterministic; the same 16 byte plaintext block will always produce the same 16 byte ciphertext.
