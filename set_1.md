@@ -1,4 +1,4 @@
-# Crypto Challenge Set 1 #
+# [ Crypto Challenge Set 1 ](https://cryptopals.com/sets/1) #
 This is the qualifying set. We picked the exercises in it to ramp developers up gradually into coding cryptography, but also to verify that we were working with people who were ready to write code.
 
 This set is relatively easy. With one exception, most of these exercises should take only a couple minutes. But don't beat yourself up if it takes longer than that. It took Alex two weeks to get through the set!
@@ -6,7 +6,7 @@ This set is relatively easy. With one exception, most of these exercises should 
 If you've written any crypto code in the past, you're going to feel like skipping a lot of this. Don't skip them. At least two of them (we won't say which) are important stepping stones to later attacks.
 #
 
-## 1. Convert hex to base64 ##
+## [1. Convert hex to base64](https://cryptopals.com/sets/1/challenges/1) ##
 The string:
 
 `49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d`
@@ -16,7 +16,7 @@ Should produce:
 `SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t`
 #
 
-## 2. Fixed XOR ##
+## [2. Fixed XOR](https://cryptopals.com/sets/1/challenges/2) ##
 Write a function that takes two equal-length buffers and produces their XOR combination.
 
 If your function works properly, then when you feed it the string:
@@ -33,7 +33,7 @@ If your function works properly, then when you feed it the string:
 `746865206b696420646f6e277420706c6179`
 #
 
-## 3. Single-byte XOR cipher ##
+## [3. Single-byte XOR cipher](https://cryptopals.com/sets/1/challenges/3) ##
 The hex encoded string:
 
 `1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736`
@@ -45,13 +45,13 @@ You can do this by hand. But don't: write code to do it for you.
 How? Devise some method for "scoring" a piece of English plaintext. Character frequency is a good metric. Evaluate each output and choose the one with the best score.
 #
 
-## 4. Detect single-character XOR ##
+## [4. Detect single-character XOR](https://cryptopals.com/sets/1/challenges/4) ##
 One of the 60-character strings in [this file](https://cryptopals.com/static/challenge-data/4.txt) has been encrypted by single-character XOR.
 
 Find it.
 #
 
-## 5. Implement repeating-key XOR ##
+## [5. Implement repeating-key XOR](https://cryptopals.com/sets/1/challenges/5) ##
 Here is the opening stanza of an important work of the English language:
 
 `Burning 'em, if you ain't quick and nimble`
@@ -68,7 +68,7 @@ It should come out to:
 a282b2f20430a652e2c652a3124333a653e2b2027630c692b20283165286326302e27282f`
 #
 
-## 6. Break repeating-key XOR ##
+## [6. Break repeating-key XOR](https://cryptopals.com/sets/1/challenges/6) ##
 It is officially on, now.
 
 This challenge isn't conceptually hard, but it involves actual error-prone coding. The other challenges in this set are there to bring you up to speed. This one is there to qualify you. If you can do this one, you're probably just fine up to Set 6.
